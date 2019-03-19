@@ -1,0 +1,111 @@
+:root {
+  /* -- Colors -- */
+  --bg-color: #ecf0f1;
+  --title-color: #2c3e50;
+  --text-color: #fff;
+  --loser-color: #c0392b;
+  --winner-color: #27ae60;
+  --draw-color: #95a5a6;
+  /* -- Sizes -- */
+  --text-lg: 25px;
+  --text-md: 18px;
+  --text-sm: 13px;
+  /* -- Margins -- */
+  --margin-header: 20px 0;
+  --margin-scoreboard: 10px 0;
+  --margin-feedback: 10px 0;
+  --margin-result: 10px 0;
+  --margin-choices: 15px 0;
+}
+
+/* -- Main -- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -- Shared -- */
+h1 {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+span {
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--text-sm);
+  font-weight: 400;
+}
+
+button {
+  align-self: center;
+  margin: var(--margin-result);
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--title-color);
+  outline: none;
+  border-style: none;
+  border: 2px solid;
+  border-color: var(--title-color);
+  border-radius: 150px;
+}
+/* -- Header -- */
+header {
+  margin: var(--margin-header);
+}
+/* -- ScoreBoard -- */
+.scoreBoard {
+  margin: var(--margin-scoreboard);
+}
+.delimiter {
+}
+
+.userScore {
+}
+.npcScore {
+}
+/* -- Feedback -- */
+.feedback {
+  margin: var(--margin-feedback);
+}
+.feedback > .message {
+}
+/* -- Choices -- */
+.choices {
+  margin: var(--margin-choices);
+}
+.choices > img {
+  width: 75px;
+  height: 75px;
+}
+/* -- ResultBoard -- */
+.resultBoard {
+  margin: var(--margin-result);
+}
+.resultBoard > .message {
+}

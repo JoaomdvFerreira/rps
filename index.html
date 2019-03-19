@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Papper Scissors Game</title>
+    <link rel="shortcut icon" href="src/favicon-3.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container centered">
+      <header>
+        <h1>Rock Papper Scissors</h1>
+      </header>
+      <div class="scoreBoard">
+        <span id="userScore" class="userScore">0</span>
+        <span class="delimiter">|</span>
+        <span id="npcScore" class="npcScore">0</span>
+      </div>
+      <div class="feedback">
+        <p id="feedback">Feeback Message Here</p>
+      </div>
+      <div class="choices">
+        <img id="rock" src="src/rock_2.png" />
+        <img id="papper" src="src/paper2.png" />
+        <img id="scissors" src="src/scissors_2.png" />
+      </div>
+      <div class="resultBoard">
+        <p id="result">Result Message Here</p>
+      </div>
+      <button type="button" onclick="resetGame()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
