@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rock Papper Scissors Game</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="shortcut icon" href="src/favicon-3.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container centered">
       <header>
-        <h1>Rock Papper Scissors</h1>
+        <h1>Rock Paper Scissors</h1>
       </header>
       <div class="scoreBoard">
         <span id="userScore" class="userScore">0</span>
@@ -25,16 +25,23 @@
       <div class="feedback">
         <p id="feedback">Feeback Message Here</p>
       </div>
-      <div class="choices">
-        <img id="rock" src="src/rock_2.png" />
-        <img id="papper" src="src/paper2.png" />
-        <img id="scissors" src="src/scissors_2.png" />
-      </div>
       <div class="resultBoard">
         <p id="result">Result Message Here</p>
       </div>
-      <button type="button" onclick="resetGame()">Reset</button>
+      <div class="game">
+        <div class="choices">
+          <img id="user-choice" src="src/rock_3.png" />
+          <img id="npc-choice" src="src/rock_4.png" />
+        </div>
+        <div class="options options-user" id="options">
+          <p>Choose your hand</p>
+          <img id="rock" src="src/rock_3.png" />
+          <img id="papper" src="src/paper3.png" />
+          <img id="scissors" src="src/scissors3.png" />
+        </div>
+      </div>
+      <button type="button" onclick="reset()">Reset</button>
     </div>
-    <script src="script.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>

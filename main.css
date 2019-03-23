@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inconsolata", monospace;
 }
 
 body {
@@ -82,30 +82,59 @@ header {
 .scoreBoard {
   margin: var(--margin-scoreboard);
 }
-.delimiter {
-}
-
-.userScore {
-}
-.npcScore {
-}
 /* -- Feedback -- */
 .feedback {
   margin: var(--margin-feedback);
 }
-.feedback > .message {
-}
 /* -- Choices -- */
-.choices {
+.game {
+  align-self: center;
+}
+.options {
   margin: var(--margin-choices);
+  transition: opacity 0.2s ease-in-out;
 }
-.choices > img {
-  width: 75px;
-  height: 75px;
+
+#rock,
+#papper,
+#scissors {
+  opacity: 1;
+  cursor: pointer;
 }
+
+.options img,
+.choices img {
+  width: 90px;
+  height: 90px;
+}
+
 /* -- ResultBoard -- */
 .resultBoard {
   margin: var(--margin-result);
 }
-.resultBoard > .message {
+
+/* Animations */
+
+@keyframes shakeHands {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
